@@ -1,5 +1,7 @@
 import '@/app/ui/global.css';
 import { inter, lusitana } from '@/app/ui/fonts'
+import Link from 'next/link';
+
 //https://nextjs.org/learn/dashboard-app
 export default function RootLayout({
   children,
@@ -8,7 +10,9 @@ export default function RootLayout({
 }) {
   return (
   <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

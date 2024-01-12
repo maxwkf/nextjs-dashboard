@@ -45,6 +45,7 @@ export default function Page() {
           />
         </div>
       </div>
+      <div><Link href="https://nextjs.org/learn/dashboard-app" target="_blank">https://nextjs.org/learn/dashboard-app</Link></div>
     </main>
   );
 }

@@ -1,6 +1,16 @@
+import { Metadata } from 'next';
 import '@/app/ui/global.css';
 import { inter, lusitana } from '@/app/ui/fonts'
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+  description: 'The official Next.js Learn Dashboard built with App Router.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
 
 //https://nextjs.org/learn/dashboard-app
 export default function RootLayout({

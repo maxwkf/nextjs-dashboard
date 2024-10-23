@@ -8,8 +8,7 @@ export const authConfig = {
         authorized( { auth, request: { nextUrl } } ) {
             // In JavaScript, the double exclamation operator converts an Object to Boolean.
             //  This happens such that “falsy” objects become false and “truthy” objects become true.
-            // const isLoggedIn = !!auth?.user;
-            const isLoggedIn = true;
+            const isLoggedIn = !!auth?.user;
             const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
 
             if (isOnDashboard) {

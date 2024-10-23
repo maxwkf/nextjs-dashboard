@@ -26,14 +26,6 @@ export type Invoice = {
   status: 'pending' | 'paid';
 };
 
-
-export type Post = {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-}
-
 export type Revenue = {
   month: string;
   revenue: number;
@@ -46,7 +38,6 @@ export type LatestInvoice = {
   email: string;
   amount: string;
 };
-
 
 // The database returns a number for amount, but we later format it to a string with the formatCurrency function
 export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {

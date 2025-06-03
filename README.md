@@ -4,6 +4,9 @@ npm i
 npm run dev
 ```
 
+## For the user account
+please use the user specified in the placeholer-data.js
+
 
 
 

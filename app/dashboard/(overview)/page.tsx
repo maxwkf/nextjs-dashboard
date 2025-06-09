@@ -45,7 +45,7 @@ export default async function Page() {
         Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
         */}
         {/* This is an extra inclusion of headlessui */}
-        <ListBoxDemo />
+        {/* <ListBoxDemo /> */}
       </div>
     </main>
   );

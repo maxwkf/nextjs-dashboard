@@ -1,4 +1,3 @@
-"use client"
 import {
   BanknotesIcon,
   ClockIcon,
@@ -36,6 +35,7 @@ export default async function CardWrapper() {
     </>
   );
 }
+
 
 export function Card({
   title,
